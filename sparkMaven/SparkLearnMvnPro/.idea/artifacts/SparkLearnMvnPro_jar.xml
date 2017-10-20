@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="SparkLearnMvnPro:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/SparkLearnMvnPro_jar</output-path>
+    <root id="archive" name="SparkLearnMvnPro.jar">
+      <element id="module-output" name="SparkLearnMvnPro" />
+    </root>
+  </artifact>
+</component>

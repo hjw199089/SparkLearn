@@ -1,0 +1,15 @@
+
+
+---------该工程主要用来学习spark官方教程中的例子-------------
+
+DataFrameTest:
+为<<Spark SQL and DataFrames - Spark 1.6.pdf>> 中关于SQL的学习
+
+WordCnt:
+为<<Spark Programming Guide - Spark 1.6>>中首个例程
+
+QuickStartBasic:
+<<Spark Streaming - Spark 1.6>>中例程
+
+
+

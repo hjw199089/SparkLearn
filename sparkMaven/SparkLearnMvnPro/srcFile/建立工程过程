@@ -1,0 +1,4 @@
+1: 建立空工程 ---> scala --->  scala (不是SBT)
+2: 选择javaSDK   scalaSDK 注意值2.10.4
+3: 添加外部spark库 选中External Libraries
+---> File ---->  project structer --- lib --- + ---java----选择 spark-assembly-1.6.0-hadoop2.6.0.jar

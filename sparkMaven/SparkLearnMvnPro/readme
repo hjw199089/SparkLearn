@@ -1,0 +1,41 @@
+1-建立一个mvn
+mvn archetype:generate -DgroupID=com.spark.learn -DartifactID=SparkLearnMvnPro -DpackageName=spark.test.v1
+
+2-file-->projectStruct libraries + 好 添加SDK 选择 scala-2.10.4
+
+3-file-->projectStruct
+导入spark-1.6.0-bin-hadoop2.6.0.tgz 中的lib文件下的spark-assembly-1.6.0-hadoop2.6.0.jar
+
+4
+--要想用运行hiveContext 必须加入
+Copy those jars into the $SPARK_HOME/lib/
+datanucleus-api-jdo-3.2.6.jar
+datanucleus-core-3.2.10.jar
+datanucleus-rdbms-3.2.9.jar
+这里我们的解决是 用加一个pom文件下载该3个文件即可
+
+    <dependency>
+      <groupId>org.datanucleus</groupId>
+      <artifactId>datanucleus-api-jdo</artifactId>
+      <version>3.2.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.datanucleus</groupId>
+      <artifactId>datanucleus-core</artifactId>
+      <version>3.2.10</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.datanucleus/datanucleus-rdbms -->
+    <dependency>
+      <groupId>org.datanucleus</groupId>
+      <artifactId>datanucleus-rdbms</artifactId>
+      <version>3.2.9</version>
+    </dependency>
+
+
+5 备注:在本地是有些函数提示找不到但是仍可以运行,比如 histogram
+
+6
+https://www.zhihu.com/question/24869894
+https://github.com/linbojin/spark-notes/blob/master/ide-setup.md
